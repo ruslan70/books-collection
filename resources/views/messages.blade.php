@@ -28,6 +28,9 @@ ts value for section title to "Mini Bücher Kollektion" (section content is used
  
 <form action="/create" method="post">
    <input type="text" name="title" placeholder="Title">
+   <input type="text" name="author" placeholder="Author">
+   <input type="text" name="genre" placeholder="Genre">
+   <input type="text" name="published" placeholder="Published">
    <input type="text" name="content" placeholder="Content">
    <!-- this blade directive is necessary for all form posts somewhere in between
        the form tags -->
@@ -40,17 +43,17 @@ ts value for section title to "Mini Bücher Kollektion" (section content is used
 <h2>Recent messages:</h2>
 
 <ul>
-<!-- loops through the $messages, that this blade template
-   gets from MessageController.php. for each element of the loop which
-   we call $message we print the properties (title, content
-   and created_at in an <li> element -->
-@foreach ($messages as $message) 
-   <li>
-       <b>{{$message->title}}:</b><br>
-       {{$message->content}}<br>
-       {{$message->created_at->diffForHumans()}}           
-   </li>
-@endforeach
+    <!-- loops through the $messages, that this blade template
+    gets from MessageController.php. for each element of the loop which
+    we call $message we print the properties (title, content
+    and created_at in an <li> element -->
+    @foreach ($messages as $message) 
+        <li>
+            <b>{{$message->title}}:</b><br>
+            {{$message->content}}<br>
+            {{$message->created_at->diffForHumans()}}           
+        </li>
+    @endforeach
 </ul>
  
 @endsection
