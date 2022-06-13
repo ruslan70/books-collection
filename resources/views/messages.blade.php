@@ -23,6 +23,19 @@
 <!--starts section content, defines some html for section content and end section content
 ts value for section title to "Mini Bücher Kollektion" (section content is used in messages.blade.php) -->
 @section('content')
+
+<h2>Create new message: </h2>
+ 
+<form action="/create" method="post">
+   <input type="text" name="title" placeholder="Title">
+   <input type="text" name="content" placeholder="Content">
+   <!-- this blade directive is necessary for all form posts somewhere in between
+       the form tags -->
+   @csrf
+   <button type="submit">Submit</button>
+ 
+</form>
+
  
 <h2>Recent messages:</h2>
 
