@@ -35,7 +35,7 @@ ts value for section title to "Mini Bücher Kollektion" (section content is used
    <!-- this blade directive is necessary for all form posts somewhere in between
        the form tags -->
    @csrf
-   <button type="submit">Submit</button>
+   <button class="btn btn-primary" type="submit">Submit</button>
  
 </form>
 
@@ -50,6 +50,9 @@ ts value for section title to "Mini Bücher Kollektion" (section content is used
     @foreach ($messages as $message) 
         <li>
             <b>{{$message->title}}:</b><br>
+            {{$message->author}}<br>
+            {{$message->genre}}<br>
+            {{$message->published}}<br>
             {{$message->content}}<br>
             {{$message->created_at->diffForHumans()}}           
         </li>
