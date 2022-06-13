@@ -25,3 +25,4 @@ Route::get('/messages', function () {
 
 Route::get('/messages', [MessageController::class, 'showAll']);
  
+Route::post('/create', [MessageController::class, 'create']);

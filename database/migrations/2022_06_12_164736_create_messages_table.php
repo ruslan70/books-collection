@@ -14,12 +14,13 @@ return new class extends Migration
     public function up()
     {
         Schema::create('messages', function (Blueprint $table) {
-            $table->id();
-             
+            $table->id(); 
             $table->string('title');
             $table->string('author');
-            $table->string('content');
             $table->string('genre');
+            $table->string('content');
+            $table->string('published');
+            $table->string('feedback');
 
             $table->timestamps();
         });
