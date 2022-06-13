@@ -1,14 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Scripts -->
+    <script src="{{ asset('js/app.js') }}" defer></script>
+   <!-- Styles -->
+   <link href="{{ asset('css/app.css') }}" rel="stylesheet">
    <!-- hier wird der Wert von der section "title" eines blade templates ausgefüllt,
    welches dieses layout "extended" -->
    <title>@yield('title')</title>
 </head>
 <body>
+<h1>Home</h1>
    <!-- hier wird auch der Wert von der section "title" eines blade templates ausgefüllt,
    welches dieses layout "extended" -->
    <h1><a href="/messages">@yield('title')</a></h1>
