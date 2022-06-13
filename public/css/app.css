@@ -10274,5 +10274,13 @@ textarea.form-control-lg {
 body {
   font: 100% Helvetica, sans-serif;
   color: #333;
-  background-color: rgb(193, 247, 229);
+  background-color: rgb(255, 255, 255);
+}
+
+.col p-3 {
+  color: rgb(224, 217, 180);
+}
+
+#box {
+  background-color: rgb(224, 217, 180);
 }
