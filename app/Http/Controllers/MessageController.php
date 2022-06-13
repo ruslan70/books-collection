@@ -28,5 +28,22 @@ class MessageController extends Controller
   
     }
  
+    public function create(Request $request) {
+ 
+        // we create a new Message-Object
+        $message = new Message();
+        // we set the properties title and content
+        // with the values that we got in the post-request
+        $message->title = $request->title;
+        $message->content = $request->content;
+   
+        // we save the new Message-Object in the messages
+        // table in our database
+        $message->save();
+   
+        // at the end we make a redirect to the url /messages
+        return redirect('/messages');        
+    }
+ 
  
 }
