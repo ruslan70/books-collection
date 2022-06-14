@@ -19,10 +19,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+/*
 Route::get('/messages', function () {
     return view('messages'); 
 });
+*/
 
 Route::get('/messages', [MessageController::class, 'showAll']);
  
-Route::post('/create', [MessageController::class, 'create']);
+// Route::post('/create', [MessageController::class, 'create']);
