@@ -35,6 +35,9 @@ class MessageController extends Controller
         // we set the properties title and content
         // with the values that we got in the post-request
         $message->title = $request->title;
+        $message->author = $request->author;
+        $message->genre = $request->genre;
+        $message->published = $request->published;
         $message->content = $request->content;
    
         // we save the new Message-Object in the messages
