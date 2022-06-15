@@ -9,5 +9,8 @@ ts value for section title to "Mini Bücher Kollektion" (section content is used
 @section('content')
  
 <h2>Message Details:</h2>
+
+<h3>{{$book->title}}</h3>
+<p>{{$book->content}}</p>
  
 @endsection

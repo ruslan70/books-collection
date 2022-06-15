@@ -10,17 +10,12 @@
    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
    <!-- hier wird der Wert von der section "title" eines blade templates ausgefüllt,
    welches dieses layout "extended" -->
-   <title>@yield('title')</title>
-   <style>
-
-
-
-
-
-</style>
+   <title>Master</title>
 </head>
 <body>
-<h1>Home</h1>
+
+<h1>Welcome!!!</h1>
+<!-- <h1>Home</h1>
 <div class="container py-4 mt-3">
 <div id="row" class="row">
   <div class="column" style="background-color:#E0D9B4;">
@@ -61,7 +56,7 @@
     <div id="box" class="col-md-6 pt-3">col3</div>
     <div id="box" class="col-md-6 pt-3">col4</div>
   </div>
-</div>
+</div> -->
 
    <!-- hier wird auch der Wert von der section "title" eines blade templates ausgefüllt,
    welches dieses layout "extended" -->
