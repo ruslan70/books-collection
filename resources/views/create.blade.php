@@ -4,13 +4,13 @@
 @extends('layouts/master')
  
 <!--sets value for section title to "Mini Bücher Kollektion" (section title is used in messages.blade.php) -->
-@section('title', 'Mini Bücher Kollektion')
+@section('title', 'Meine Bücher Kollektion')
 
 <!--starts section content, defines some html for section content and end section content
 ts value for section title to "Mini Bücher Kollektion" (section content is used in messages.blade.php) -->
 @section('content')
 
-<h2>Create new message: </h2>
+<h2>Create new book: </h2>
  
 <form action="/create" method="post">
    <input type="text" name="title" placeholder="Title">
@@ -26,7 +26,7 @@ ts value for section title to "Mini Bücher Kollektion" (section content is used
 </form>
 
  
-<h2>Recent messages:</h2>
+<h2>Recent book:</h2>
 
 <ul>
     <!-- loops through the $books, that this blade template

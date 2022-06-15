@@ -12,4 +12,3 @@ ts value for section title to "Mini Bücher Kollektion" (section content is used
 
 @endsection
 
-<p>asdfasdfsadfasf</p>
