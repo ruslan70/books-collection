@@ -1,17 +1,3 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-<h1><a href="/messages">Mini Bücher Kollektion</a></h1>
-
-</body>
-</html> -->
-
 
 <!--extend layout master.blade.php -->
  
@@ -43,18 +29,22 @@ ts value for section title to "Mini Bücher Kollektion" (section content is used
 <h2>Recent messages:</h2>
 
 <ul>
-    <!-- loops through the $messages, that this blade template
+    <!-- loops through the $books, that this blade template
     gets from MessageController.php. for each element of the loop which
-    we call $message we print the properties (title, content
+    we call $book we print the properties title, content
     and created_at in an <li> element -->
-    @foreach ($messages as $message) 
+    @foreach ($books as $book) 
         <li>
-            <b>{{$message->title}}:</b><br>
-            {{$message->author}}<br>
-            {{$message->genre}}<br>
-            {{$message->published}}<br>
-            {{$message->content}}<br>
-            {{$message->created_at->diffForHumans()}}           
+            <b>
+                    <!-- this link to the message details is created dynamically
+                and will point to /messages/1 for the first message -->
+                <a href="/collection/{{$book->id}}">{{$book->title}}:</a>
+            </b><br>
+            {{$book->author}}<br>
+            {{$book->genre}}<br>
+            {{$book->published}}<br>
+            {{$book->content}}<br>
+            {{$book->created_at->diffForHumans()}}           
         </li>
     @endforeach
 </ul>

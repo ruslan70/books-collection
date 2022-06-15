@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
-use App\Http\Controllers\MessageController;
+use App\Http\Controllers\BookController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,12 +19,16 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-/*
-Route::get('/messages', function () {
-    return view('messages'); 
+Route::get('/home', function () {
+    return view('home'); 
 });
-*/
 
-Route::get('/messages', [MessageController::class, 'showAll']);
+Route::get('/create', [BookController::class, 'showAll']);
  
-// Route::post('/create', [MessageController::class, 'create']);
+Route::post('/create', [BookController::class, 'create']);
+
+Route::get('/collection', [BookController::class, 'showAll']);
+
+Route::get('/collection/{id}', [BookController::class, 'details']);
+
+
