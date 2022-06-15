@@ -62,7 +62,9 @@
   </div>
 </div> -->
 
-  
+   <!-- hier wird auch der Wert von der section "title" eines blade templates ausgefüllt,
+   welches dieses layout "extended" -->
+   <h1><a href="/collection">@yield('title')</a></h1>
    <!-- hier wird der Wert von der section "content" eines blade templates ausgefüllt,
    welches dieses layout "extended" -->
    @yield('content')

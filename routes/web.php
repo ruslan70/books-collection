@@ -22,6 +22,7 @@ Route::get('/', function () {
 Route::get('/home', function () {
     return view('home'); 
 });
+
 Route::get('/create', [BookController::class, 'showAll']);
  
 Route::post('/create', [BookController::class, 'create']);
