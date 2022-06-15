@@ -26,15 +26,15 @@ body {
     background-color:rgb(224, 217, 180); ;
 }
 
-// .row {
-//     --bs-gutter-x: 1.5rem;
-//     --bs-gutter-y: 0;
-//     display: flex;
-//     flex-wrap: wrap;
-//     margin-top: calc(var(--bs-gutter-y) * -1);
-//     margin-right: calc(var(--bs-gutter-x) * -.5);
-//     margin-left: calc(var(--bs-gutter-x) * -.5);
-// }
+ //.row {
+    // --bs-gutter-x: 1.5rem;
+     //--bs-gutter-y: 0;
+     //display: flex;
+    // flex-wrap: wrap;
+     //margin-top: calc(var(--bs-gutter-y) * -1);
+     //margin-right: calc(var(--bs-gutter-x) * -.5);
+     //margin-left: calc(var(--bs-gutter-x) * -.5);
+ //}
 
 * {
     box-sizing: border-box;
@@ -47,12 +47,16 @@ body {
 .row {
     display: flex;
     flex-wrap: wrap;
+    //border-radius: 3rem;
 }
   
 /* Create four equal columns */
 .column {
     flex: 25%;
     padding: 20px;
+   
+   // margin:2rem auto 3rem;
+  
 }
 
 /* On screens that are 992px wide or less, go from four columns to two columns */
