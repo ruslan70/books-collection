@@ -13,9 +13,10 @@
    <title>Master</title>
 </head>
 <body>
+  
 
 <h1>Welcome!!!</h1>
-<!-- <h1>Home</h1>
+
 <div class="container py-4 mt-3">
 <div id="row" class="row">
   <div class="column" style="background-color:#E0D9B4;">
@@ -26,6 +27,9 @@
   <div class="column" style="background-color:#bbb;">
     <h2>Column 2</h2>
     <p>Some text..</p>
+     <!-- hier wird auch der Wert von der section "title" eines blade templates ausgefüllt,
+   welches dieses layout "extended" -->
+   <h1><a href="/collection">@yield('title')</a></h1>
   </div>
   
   <div class="column" style="background-color:#ccc;">
@@ -38,7 +42,7 @@
     <p>Some text..</p>
   </div>
 </div>
-<h1>Text</h1>
+<!-- <h1>Text</h1>
   <p>Text2.</p>
   <div class="row align-items-md-stretch">
    
@@ -58,9 +62,7 @@
   </div>
 </div> -->
 
-   <!-- hier wird auch der Wert von der section "title" eines blade templates ausgefüllt,
-   welches dieses layout "extended" -->
-   <h1><a href="/messages">@yield('title')</a></h1>
+  
    <!-- hier wird der Wert von der section "content" eines blade templates ausgefüllt,
    welches dieses layout "extended" -->
    @yield('content')

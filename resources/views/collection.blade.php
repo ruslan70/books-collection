@@ -8,7 +8,7 @@
 ts value for section title to "Mini Bücher Kollektion" (section content is used in messages.blade.php) -->
 @section('content')
  
-<h2>Message Details:</h2>
+<h2>Book Details:</h2>
 
 <h3>{{$book->title}}</h3>
 <p>{{$book->content}}</p>
