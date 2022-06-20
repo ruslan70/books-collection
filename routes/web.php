@@ -22,12 +22,30 @@ Route::get('/', function () {
 Route::get('/home', function () {
     return view('home'); 
 });
-Route::get('/create', [BookController::class, 'showAll']);
- 
-Route::post('/create', [BookController::class, 'create']);
+
+Route::get('/create', function () {
+    return view('create'); 
+});
 
 Route::get('/collection', [BookController::class, 'showAll']);
 
-Route::get('/collection/{id}', [BookController::class, 'details']);
+Route::post('/collection/{id}', [BookController::class, 'update']);
+ 
+Route::post('/collection', [BookController::class, 'create']);
+
+// Route::get('/books/{id}', [BookController::class, 'details']);
+
+// Route::delete('/books/{id}', [BookController::class, 'delete']);
+
+Route::delete('/collection/{id}', [BookController::class, 'delete']);
+
+Route::post('/update/{id}', [BookController::class, 'update']);
+
+Route::get('/bookDetails/{id}', [BookController::class, 'details']);
+
+// Route::post('/collection', [BookController::class, 'feedback']);
+
+
+
 
 

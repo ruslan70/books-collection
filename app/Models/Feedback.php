@@ -5,14 +5,12 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Book extends Model
+class Feedback extends Model
 {
     use HasFactory;
 
-    public function feedbacks() {
-        
-        return $this->hasMany(Feedback::class);
-    }
+    // public function book() {
 
-
+    //     return $this->belongsTo(Book::class);
+    // }
 }

@@ -13,18 +13,23 @@
    <title>Master</title>
 </head>
 <body>
-  
+   <!-- hier wird der Wert von der section "content" eines blade templates ausgefüllt,
+   welches dieses layout "extended" -->
 
-<h1>Welcome!!!</h1>
+  
+  @yield('title', 'Meine Bücher Kollektion')
+
 
 <div class="container py-4 mt-3">
 <div id="row" class="row">
   <div class="column" style="background-color:#E0D9B4;">
+    @yield('content1')
     <h2>Column 1</h2>
     <p>Some text..</p>
   </div>
   
   <div class="column" style="background-color:#bbb;">
+    @yield('content2')
     <h2>Column 2</h2>
     <p>Some text..</p>
      <!-- hier wird auch der Wert von der section "title" eines blade templates ausgefüllt,
@@ -33,13 +38,18 @@
   </div>
   
   <div class="column" style="background-color:#ccc;">
+    @yield('content3')
     <h2>Column 3</h2>
     <p>Some text..</p>
   </div>
   
   <div class="column" style="background-color:#E0D9B4;">
+    @yield('content4')
     <h2>Column 4</h2>
     <p>Some text..</p>
+    <!-- hier wird auch der Wert von der section "title" eines blade templates ausgefüllt,
+   welches dieses layout "extended" -->
+   <h1><a href="/create">Eintrag</a></h1>
   </div>
 </div>
 <!-- <h1>Text</h1>
@@ -63,9 +73,7 @@
 </div> -->
 
   
-   <!-- hier wird der Wert von der section "content" eines blade templates ausgefüllt,
-   welches dieses layout "extended" -->
-   @yield('content')
+  
    <!-- hier wird die php Funktion date() aufgerufen mit dem Format-Pattern 'd.m.Y'
     und im html ausgegeben-->
    <div><b>Dummy Footer: {{date('d.m.Y')}}</b></div> 
