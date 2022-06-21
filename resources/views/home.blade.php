@@ -10,11 +10,12 @@ ts value for section title to "Mini Bücher Kollektion" (section content is used
 @section('content1')
 
 <h1>Welcome</h1>
-<h3>● Ziel: Einen Überblick über ihre Bücher verschaffen und Feedback und
+<h3>Ziel:<br>
+● Einen Überblick über ihre Bücher verschaffen und Feedback und
 Ideen zu ihrer Sammlung austauschen.<br>
-● die Bücher im DB nach folgenden Kriterien (Genre, Titel, Autor,
+● Die Bücher im DB nach folgenden Kriterien (Genre, Titel, Autor,
 Erscheinungsdatum und Kurzbeschreibung) organisieren<br>
-● die Möglichkeit der Veränderung oder Delete der DB auf der Webseite
+● Die Möglichkeit der Veränderung oder Delete der DB auf der Webseite
 haben</h3>
 
 

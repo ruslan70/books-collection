@@ -10354,3 +10354,7 @@ h3, .h3 {
   background-color: rgb(112, 92, 41);
   color: rgb(224, 217, 180);
 }
+
+.header {
+  color: rgb(112, 92, 41);
+}

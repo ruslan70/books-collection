@@ -13,8 +13,8 @@
    <title>Master</title>
 </head>
 <body>
-<div style="padding:5px">
-  <h4 style="text-align:center">Meine Bücher Kollektion.</h4>
+<div  style="padding:5px">
+  <h4 class="header" style="text-align:center">Meine Bücher Kollektion.</h4>
 </div>
 
 <div class="navbar">
