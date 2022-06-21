@@ -2,11 +2,11 @@
 @extends('layouts.master')
  
 <!--sets value for section title to "Mini Bücher Kollektion" (section title is used in messages.blade.php) -->
-@section('title', 'Mini Bücher Kollektion')
+@section('title', 'Bücher Details')
  
 <!--starts section content, defines some html for section content and end section content
 ts value for section title to "Mini Bücher Kollektion" (section content is used in messages.blade.php) -->
-@section('content')
+@section('content3')
  
 <h2>Book Details:</h2>
 
@@ -30,14 +30,14 @@ ts value for section title to "Mini Bücher Kollektion" (section content is used
                 <input type="text" name="content" class="form-content"  value="{{ $book->content }}"><br>
                 
                 <br>
-                <button type="submit" class="btn btn-primary"><i class="save"></i>Update</button><br>
+                <button type="submit" class="btn"><i class="save"></i>Update</button><br>
                                   
 </form>	
-
+<br>
 <form action="/collection/{{$book->id}}" method="post">
     @csrf
     @method('delete')
-    <button type="submit">Delete</button>
+    <button class="delete" type="submit">Delete</button>
 </form>
 
 

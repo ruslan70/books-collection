@@ -10297,6 +10297,7 @@ body {
 .row {
   display: flex;
   flex-wrap: wrap;
+  --bs-gutter-x: 1.5rem;
 }
 
 /* Create four equal columns */
@@ -10306,7 +10307,7 @@ body {
 }
 
 /* On screens that are 992px wide or less, go from four columns to two columns */
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 2000px) {
   .column {
     flex: 50%;
   }
@@ -10316,4 +10317,40 @@ body {
   .row {
     flex-direction: column;
   }
+}
+.navbar {
+  background-color: rgb(112, 92, 41);
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  color: rgb(224, 217, 180);
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: rgb(224, 217, 180);
+  color: rgb(112, 92, 41);
+}
+
+.fixed-bottom {
+  background-color: rgb(112, 92, 41);
+}
+
+.small {
+  color: rgb(224, 217, 180);
+  text-decoration: none;
+  text-align: center;
+}
+
+h3, .h3 {
+  color: rgb(112, 92, 41);
+}
+
+.btn {
+  background-color: rgb(112, 92, 41);
+  color: rgb(224, 217, 180);
 }

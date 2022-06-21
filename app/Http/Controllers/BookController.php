@@ -70,9 +70,9 @@ class BookController extends Controller
         // DEVONLY
         // $book = Book::find(1);
  
-        $feedbacks = $book->feedbacks;
+        // $feedbacks = $book->feedbacks;
          
-        dd($feedbacks);
+        // dd($feedbacks);
        
         // we return the view bookDetails.blade.php
         // and we also pass it the book-Object that we got
