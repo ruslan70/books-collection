@@ -86,9 +86,8 @@
     <div id="box" class="col-md-6 pt-3">col4</div>
   </div>-->
 </div> 
+  
 
-  
-  
    <!-- hier wird die php Funktion date() aufgerufen mit dem Format-Pattern 'd.m.Y'
     und im html ausgegeben-->
     <footer class="fixed-bottom">
