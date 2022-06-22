@@ -10,7 +10,7 @@
 
 $font-stack: Helvetica, sans-serif;
 $primary-color: #333;
-$background-color: rgb(255, 255, 255);
+$background-color: rgb(240, 230, 197);
  
 body {
     font: 100% $font-stack;
@@ -44,10 +44,12 @@ body {
 #row {
     --bs-gutter-x: 1.5rem;
 }
+
 .row {
     display: flex;
     flex-wrap: wrap;
     --bs-gutter-x: 1.5rem;
+}
 
   
 /* Create four equal columns */
@@ -116,6 +118,6 @@ body {
   }
 
   .header {
-      
       color: rgba(112, 92, 41, 1);
+      
   }
